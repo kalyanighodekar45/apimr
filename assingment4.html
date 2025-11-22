@@ -1,0 +1,396 @@
+<!--
+	assignment 04: Creating Tables in html
+	Objective: To learn how to present tabuler data.
+	Tasks: Create a timetable or price list using HTML table tags with proper headings,rows,and columns.
+	Course: VSEC-101-CA: HTML and Webpage Designing
+    College: APIMR, Landewadi
+    University: Savitribai Phule Pune University
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- The <head> section contains metadata and the title of the page -->
+	<title>Creating Lists in HTML</title>
+</head>
+
+
+<body bgcolor="#f5fcff" text="#000000"> <!-- Sets a light background color and black text -->
+ 
+    <!-- Heading section -->
+    <h1 align="center">Creating Lists in HTML</h1>
+    <h2 align="center">Savitribai Phule Pune University</h2>
+    <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+    <hr color="blue" size="3">
+	
+	<!-- Question 1 -->
+	
+	<h1>Question 1:Basic Table</h1>
+	
+	<h2>1. Basic Table Example</h2>
+	
+	<table border="1" cellpadding="8" cellpadding="4">
+	  <caption><b>Subject List</b></caption>
+	  <tr>
+	    <th>sr. No</th>
+		<th>Subject</th>
+	  </tr>
+	  <tr>
+	    <td>1</td>
+		<td>HTML</td>
+	  </tr>
+	  <tr> 
+	    <td>2</td>
+		<td>CSS</td>
+	  </tr>
+	</table>
+	
+	<h2>1. Student Activity</h2>
+	
+	<table border="1" cellpadding="8" cellpadding="4">
+	  <caption><b>Hobbies List</b></caption>
+	  <tr>
+	    <th>sr. No</th>
+		<th>Hobby</th>
+	  </tr>
+	  <tr>
+	    <td>1</td>
+		<td>DRAWING</td>
+	  </tr>
+	  <tr>
+	    <td>2</td>
+		<td>SINGING</td>
+	  </tr>
+	  <tr>
+	    <td>3</td>
+		<td>DANCING</td>
+	  </tr>
+	</table>
+	
+	
+	<!-- Question 2 -->
+	
+	<h1>Question 2:Weekly Timetable (colspan/rowspan)</h1>
+
+    <h2>2.Weekly Timetable Example</h2>
+
+	<table border="1" cellpadding="6" cellpadding="4">
+	  <caption><b>Sample timetable</b></caption>
+	  <tr>
+	    <th>Day</th>
+		<th>9-10 AM</th>
+		<th>10-11 AM</th>
+		<th>11-12 PM</th>
+	  </tr>
+	  <tr>
+	    <td>Monday</td>
+		<td>HTML</td>
+		<td>CSS</td>
+		<td>Break</td>
+	  </tr>
+	  <tr>
+	    <td rowspan="2">Tuesday</td>
+		<td>Computer</td>
+		<td>Maths</td>
+		<td>English</td>
+	  </tr>
+	  <tr>
+	    <td colspan="3">Project Work (All Groups)</td>
+	  </tr>
+	</table>
+	
+	<h2>2. Student Activity</h2>
+	
+	<table border="1" cellpadding="6" cellpadding="4">
+	  <caption><b>Weekly timetable</b></caption>
+	  <tr>
+	    <th>Day</th>
+		<th>10-11</th>
+		<th>11-12</th>
+		<th>12.00-12.30</td>
+		<th>12.30-01.30</th>
+		<th>01.30-02.30</th>
+		<td>02.30-03.30</td>
+		<td>03.30-04.30</td>
+	  </tr>
+	  <tr>
+	    <td>Monday</td>
+		<td>IDS</td>
+		<td>CPP</td>
+		<td rowspan="6">Lanch Break</td>
+		<td>HTML</td>
+		<td rowspan="4" colspan="2">C-Pract</td>
+		<td>Physical Education</td>
+	  </tr>
+	  <tr>
+	    <td>Tuesday</td>
+		<td>IDS</td>
+		<td>CPP</td>
+		<td>HTML</td>
+		<td>Group Discussion</td>
+	  </tr>
+	  <tr>
+	    <td>Wednesday</td>
+		<td>ENG</td>
+		<td>COA</td>
+		<td>HTML</td>
+		<td>Physical Education</td>
+	  </tr>
+	  <tr>
+	    <td>Thurday</td>
+		<td>ENG</td>
+		<td>COA</td>
+		<td>HTML</td>
+		<td>Group Discussion</td>
+	  </tr>
+	  <tr>
+	    <td>Friday</td>
+		<td>IKS</td>
+		<td>Assembly</td>
+		<td>DSM</td>
+		<td>EVS</td>
+		<td colspan="2">DSM-Pract</td>
+	  </tr>
+	  <tr>
+	    <td>Saturday</td>
+		<td>IKS</td>
+		<td>DSM</td>
+		<td>EVS</td>
+		<td colspan="2">DSM-Pract</td>
+		<td>Physical Education</td>
+	  </tr>
+	</table>
+	
+	<!-- Question 3 -->
+	
+	<h1>Question 3:Price List Table (multiple columns)</h1>
+	
+	<h2>3. Price List Example</h2>
+	
+	<table border="1" cellpadding="8" cellpadding="4">
+	  <caption><b>Stationery Price List</b></caption>
+	  <tr>
+	    <th>Item</th>
+		<th>Brand</th>
+		<th>Price</th>
+	  </tr>
+	  <tr>
+	    <td>Notebook</td>
+		<td>Classmate</td>
+		<td>45</td>
+	  </tr>
+	  <tr>
+	    <td>Ball Pen</td>
+		<td>Reynolds</td>
+		<td>12</td>
+	  </tr>
+	</table>
+	
+	<h2>3. Student Activity</h2>
+	
+	<table border="1" cellpadding="8" cellpadding="4">
+	  <caption><b>Electronic Items List</b></caption>
+	  <tr>
+	    <th>Product</th>
+		<th>Brand</th>
+		<th>Model</th>
+		<th>price</th>
+	  </tr>
+	  <tr> 
+	    <td>Laptop</td>
+		<td>HP</td>
+		<td>HP 15s (i5 12th Gen)</td>
+		<td>48000-55000</td>
+	  </tr>
+	  <tr>
+	    <td>Desktop CPU</td>
+		<td>Lenovo</td>
+		<td>ThinkCentre Neo 30a</td>
+		<td>35000-45000</td>
+	  </tr>
+	  <tr>
+	    <td>Moniter</td>
+		<td>Dell</td>
+		<td>Dell 24"FHD SE2422H</td>
+		<td>8500-10000</td>
+	  </tr>
+	  <tr>
+	    <td>Keyboard</td>
+		<td>Logitech</td>
+		<td>Logitech K120</td>
+		<td>700-900</td>
+	  </tr>
+	  <tr>
+	    <td>Mouse</td>
+		<td>HP</td>
+		<td>HP X1000 Wired</td>
+		<td>350-500</td>
+	  </tr>
+	  <tr>
+	    <td>Hard disk(External)</td>
+		<td>Seagate</td>
+		<td>Expansion</td>
+		<td>3500-4000</td>
+	  </tr>
+	  <tr>
+	    <td>SSD(Internal</td>
+		<td>Samsung</td>
+		<td>Samsung 870 EVO 500GB</td>
+		<td>3800-4200</td>
+	  </tr>
+	  <tr>
+	    <td>RAM</td>
+		<td>Corsair</td>
+		<td>Vengeance 8GB DDR4</td>
+		<td>2000-2400</td>
+	  </tr>
+	  <tr>
+	    <td>Printer</td>
+		<td>Canom</td>
+		<td>Canono Pixma g2020</td>
+		<td>12000-14000</td>
+	  </tr>
+	  <tr> 
+	    <td>Graphics Card</td>
+		<td>Nvidia</td>
+		<td>GTX 1650</td>
+		<td>14000-16000</td>
+	  </tr>
+	</table>
+	
+	<!-- Question 4 -->
+	
+	<h1>Question 4:caption,cellpadding & cellpadding (table spacing & title)
+	
+	<h2>4. Caption & Spacing Example</h2>
+	
+	<table border="2" cellpadding="12" cellpadding="6">
+	  <caption><b>Monthly Expenses</b></caption>
+	  <tr>
+	    <th>Month</th>
+		<th>Rent</th>
+		<th>Food</th>
+		<th>other</th>
+	  </tr>
+	  <tr>
+	    <td>January</td>
+		<td>8000</td>
+		<td>3000</td>
+		<td>1200</td>
+	  </tr>
+	  <tr> 
+	    <td>February</td>
+		<td>8000</td>
+		<td>3200</td>
+		<td>1200</td>
+	  </tr>
+	</table>
+	
+	<h2>4. Student Activity</h2>
+	 
+	<table border=""2" cellpadding="12" cellpadding="6">
+	  <caption><b>small budget table</b></Caption>
+	  <tr>
+	    <th>Month</th>
+		<th>Food</td>
+		<th>Farmer</td>
+		<th>Education</td>
+	  </tr>
+	  <tr>
+	    <td>January</td>
+		<td>15000</td>
+		<td>30000</td>
+		<td>1000</td>
+	  </tr>
+	  <tr>
+	    <td>February</td>
+		<td>17000</td>
+		<td>50000</td>
+		<td>1500</td>
+	  </tr>
+	  <tr>
+	    <td>March</td>
+		<td>20000</td>
+		<td>100000</td>
+		<td>500</td>
+	  </tr>
+	</table>
+	
+	<!-- Question 5 -->
+	
+	<h1>Question 5:Merged Cells (colspan+rowspan)- complex layout
+	
+	<h2>5. Merged Cells Example</h2>
+	
+	<table border="1" cellpadding="8" cellpadding="4">
+	  <Caption><b>Class Scheduke (Merged Cells)</b></caption>
+	  <tr>
+	    <th>Time</th>
+		<th>Mon</th>
+		<th>Tue</th>
+		<th>Wed</th>
+	  </tr>
+	  <tr>
+	    <td>9:00 - 10:00</td>
+		<td>Math</td>
+		<td rowspan="2">Computer Lab</td>
+		<td>English</td>
+	  </tr> 
+	  <tr>
+	    <td>10:00 - 11:00</td>
+		<td>Science</td>
+		<td colspan="2">Guest Lecture</td>
+		<!-- colspan merges Mon and Wed cells here -->
+	  </tr>
+	  <tr> 
+	    <td>11:00 - 12:00</td>
+		<td>Science</td>
+		<td>Math</td>
+		<td>Sports</td>
+	  </tr>
+	</table>
+	
+	<h2>5. Student Activity</h2>
+	
+	<table border="1" cellpadding="8" cellpadding="4">
+	  <Caption><b>Daily Meal Plan</b></Caption>
+	  <tr>
+		<th>Meal</th>
+		<th>Food Item 1</th>
+		<th>Food Item 2</th>
+	  </tr>
+	  
+	<!-- colsapn merges Mon and wed cells here -->
+	
+	  <tr>
+	    <td>Breakfast</td>
+		<td colspan="2">poha</td>
+	  </tr>
+	  <tr>
+	    <td rowspan="2">Lunch</td>
+		<td>Rice</td>
+		<td>Dal</td>
+      </tr>
+      <tr>	  
+		<td>Chapati</td>
+		<td>sabji</td>
+	  </tr>
+	  <tr>
+	    <td>Dinner</td>
+		<td>Soup</td>
+		<td>Salad</td>
+	</table>
+	  
+		
+	  <!-- Footer Section -->
+		<footer>
+        <p align="center">
+            Created by: <b>Kalyani Ghodekar</b><br>
+            Course Code: VSEC-101-CA<br>
+            College: APIMR, Landewadi<br>
+            &copy; 2025 Savitribai Phule Pune University
+        </p>
+    </footer>
+</body>
+</html>
+	
